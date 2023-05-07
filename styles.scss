@@ -1,0 +1,266 @@
+// RESET
+
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h4, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: none;
+}
+
+footer, header, nav, section, main{
+    display: block;
+}
+
+body{
+    line-height: 1;
+}
+
+ol, ul{
+    list-style: none;
+}
+
+blockquote, q{
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after{
+    content: '';
+    content: none;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input{
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+// END RESET
+
+
+
+
+// Variables
+
+//Colors
+$color-bg: #F2C299;
+$color-header: #F2884B;
+$color-title: #048ABF;
+$color-text: #F2D98D;
+$color-bg-dark: #037F8C;
+
+
+//Typography
+
+$fs-300: 1rem;
+$fs-400: 1.2rem;
+$fs-500: 1.5rem;
+$fs-600: 2rem;
+$fs-700: 2.5rem;
+$fs-800: 3rem;
+$fs-900: 4rem;
+
+//END VARIABLES
+
+
+
+// Base
+body{
+  background: $color-bg
+}
+
+section {
+  background: $color-bg-dark;
+}
+
+h1 {
+  color: $color-header;
+  font-size: $fs-600;
+}
+
+h2 {
+    font-size: $fs-500;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  color: $color-title;
+}
+
+p {
+  color: $color-text;
+  font-size: $fs-300;
+}
+
+a {
+  text-decoration: none;
+  color: $color-text;
+}
+
+
+.cta-wrapper {
+  margin: 3rem 1rem 0;
+  padding: 0.75rem;
+  border-radius: 999px;
+  background: $color-title;
+  box-shadow: 0 0 15px 2px black;
+  transition: all 0.5s ease;
+  
+  a {
+    font-weight: bold;
+    font-size: $fs-500;
+    color: $color-header;
+
+    &:hover {
+      color: $color-title;
+    }
+  }
+  &:hover {
+    background: $color-bg;
+    box-shadow: 0 0 15px 2px $color-header;
+  }
+}
+// END BASE
+
+
+
+
+//Header
+header {
+  display: flex;
+  justify-content: space-between;
+  background: $color-bg-dark;
+  padding: 2rem;
+}
+
+.logo {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  
+  li a{
+    font-size: $fs-400;
+    transition: all .3s ease;
+    
+    &:hover {
+      color: $color-header;
+    }
+  }
+}
+
+//End Header
+
+// Hero
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  margin: 1rem auto;
+  text-align: center;
+  padding: 2rem 0;
+  width: 90%;
+  border-radius: 10px;
+  
+  .hero__title {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .hero__main {
+        
+    img {
+            width: 100%;
+            object-fit: contain;
+            border-radius: 50%;
+            padding: 0.5rem;
+            max-width: 500px;
+        }
+
+  }
+  
+  .hero__text {
+    
+
+  }
+    
+
+  
+  .hero__social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
+    
+    
+    a {
+      color: $color-header;
+      transition: all .3s ease;
+      
+      &:hover {
+        color: $color-bg;
+        font-size: $fs-500;
+       }
+    }
+    
+  }
+}
+
+// END HERO
+
+//Window Styles
+
+.window-styles {
+  margin: 2rem 0 ;
+  border-radius: 10px;
+  padding-bottom: 3rem;
+  
+  .section__title {
+    text-align: center;
+    font-size: 3rem;
+    color: $color-header;
+    margin: 2rem;
+    padding: 1rem;
+  }
+}
+
+.styles__container {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  .window {
+    margin: 1rem;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.5);
+    
+    p {
+      font-size: 1.2rem;
+      padding: 1rem 2rem;
+    }
+  }
+}
+
+// END WINDOW STYLES

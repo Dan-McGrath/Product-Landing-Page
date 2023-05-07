@@ -1,1 +1,196 @@
-/*# sourceMappingURL=styles.css.map */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h4, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+body {
+  background: #F2C299;
+}
+
+section {
+  background: #037F8C;
+}
+
+h1 {
+  color: #F2884B;
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  color: #048ABF;
+}
+
+p {
+  color: #F2D98D;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #F2D98D;
+}
+
+.cta-wrapper {
+  margin: 3rem 1rem 0;
+  padding: 0.75rem;
+  border-radius: 999px;
+  background: #048ABF;
+  box-shadow: 0 0 15px 2px black;
+  transition: all 0.5s ease;
+}
+.cta-wrapper a {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #F2884B;
+}
+.cta-wrapper a:hover {
+  color: #048ABF;
+}
+.cta-wrapper:hover {
+  background: #F2C299;
+  box-shadow: 0 0 15px 2px #F2884B;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background: #037F8C;
+  padding: 2rem;
+}
+
+.logo {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links li a {
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+.nav-links li a:hover {
+  color: #F2884B;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  margin: 1rem auto;
+  text-align: center;
+  padding: 2rem 0;
+  width: 90%;
+  border-radius: 10px;
+}
+.hero .hero__title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.hero .hero__main img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 50%;
+  padding: 0.5rem;
+  max-width: 500px;
+}
+.hero .hero__social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem;
+}
+.hero .hero__social-links a {
+  color: #F2884B;
+  transition: all 0.3s ease;
+}
+.hero .hero__social-links a:hover {
+  color: #F2C299;
+  font-size: 1.5rem;
+}
+
+.window-styles {
+  margin: 2rem 0;
+  border-radius: 10px;
+  padding-bottom: 3rem;
+}
+.window-styles .section__title {
+  text-align: center;
+  font-size: 3rem;
+  color: #F2884B;
+  margin: 2rem;
+  padding: 1rem;
+}
+
+.styles__container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.styles__container .window {
+  margin: 1rem;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.5);
+}
+.styles__container .window p {
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+}/*# sourceMappingURL=styles.css.map */
