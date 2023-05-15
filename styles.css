@@ -113,17 +113,31 @@ header {
   display: flex;
   gap: 0.5rem;
 }
+.logo p {
+  font-size: 0.75rem;
+}
 
-.nav-links {
-  display: flex;
-  gap: 1.5rem;
+nav .nav-links {
+  display: none;
 }
-.nav-links li a {
-  font-size: 1.2rem;
-  transition: all 0.3s ease;
+
+.button-toggles {
+  height: 2rem;
+  width: 2rem;
+  background-color: transparent;
 }
-.nav-links li a:hover {
-  color: #F2884B;
+.button-toggles button {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 0;
+}
+.button-toggles button i {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.button-toggles .close {
+  display: none;
 }
 
 .hero {
@@ -147,6 +161,12 @@ header {
   border-radius: 50%;
   padding: 0.5rem;
   max-width: 500px;
+}
+.hero .hero__text {
+  margin: 1rem;
+}
+.hero .hero__text p {
+  font-size: 1.2rem;
 }
 .hero .hero__social-links {
   display: flex;
