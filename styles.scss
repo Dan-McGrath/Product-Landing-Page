@@ -134,6 +134,13 @@ a {
     box-shadow: 0 0 15px 2px $color-header;
   }
 }
+.section__title {
+    text-align: center;
+    font-size: 3rem;
+    color: $color-header;
+    margin: 2rem;
+    padding: 1rem;
+  }
 // END BASE
 
 
@@ -155,7 +162,7 @@ header {
   gap: 0.5rem;
 
   p {
-    font-size: $fs-200;
+    display: none;
   }
 }
 
@@ -279,11 +286,13 @@ nav {
     justify-content: center;
     gap: 1rem;
     margin: 1rem;
-    
+    padding-top: 2rem;
+    font-size: $fs-400;
     
     a {
       color: $color-header;
       transition: all .3s ease;
+      padding: 0 0.5rem; 
       
       &:hover {
         color: $color-bg;
@@ -303,13 +312,7 @@ nav {
   border-radius: 10px;
   padding-bottom: 3rem;
   
-  .section__title {
-    text-align: center;
-    font-size: 3rem;
-    color: $color-header;
-    margin: 2rem;
-    padding: 1rem;
-  }
+  
 }
 
 .styles__container {

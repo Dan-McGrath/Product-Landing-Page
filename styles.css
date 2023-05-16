@@ -102,6 +102,14 @@ a {
   box-shadow: 0 0 15px 2px #F2884B;
 }
 
+.section__title {
+  text-align: center;
+  font-size: 3rem;
+  color: #F2884B;
+  margin: 2rem;
+  padding: 1rem;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -117,7 +125,7 @@ header {
   gap: 0.5rem;
 }
 .logo p {
-  font-size: 0.75rem;
+  display: none;
 }
 
 nav .nav-links {
@@ -207,10 +215,13 @@ nav .nav-links {
   justify-content: center;
   gap: 1rem;
   margin: 1rem;
+  padding-top: 2rem;
+  font-size: 1.2rem;
 }
 .hero .hero__social-links a {
   color: #F2884B;
   transition: all 0.3s ease;
+  padding: 0 0.5rem;
 }
 .hero .hero__social-links a:hover {
   color: #F2C299;
@@ -221,13 +232,6 @@ nav .nav-links {
   margin: 2rem 0;
   border-radius: 10px;
   padding-bottom: 3rem;
-}
-.window-styles .section__title {
-  text-align: center;
-  font-size: 3rem;
-  color: #F2884B;
-  margin: 2rem;
-  padding: 1rem;
 }
 
 .styles__container {
