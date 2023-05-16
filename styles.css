@@ -105,8 +105,11 @@ a {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background: #037F8C;
   padding: 2rem;
+  position: sticky;
+  top: 0;
 }
 
 .logo {
@@ -135,9 +138,40 @@ nav .nav-links {
 .button-toggles button i {
   font-size: 1.5rem;
   font-weight: bold;
+  color: #F2884B;
 }
 .button-toggles .close {
   display: none;
+  position: absolute;
+  z-index: 9999;
+  text-align: right;
+  padding-right: 2rem;
+  top: 0;
+  right: 0;
+}
+
+.button-toggles[data-active=true] .nav-links {
+  background-color: hsla(197, 91%, 13%, 0.95);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.button-toggles[data-active=true] .nav-links .close {
+  position: absolute;
+  z-index: 999;
+}
+.button-toggles[data-active=true] .nav-links li a {
+  margin: 1rem auto;
+  width: 100%;
+  z-index: 999;
+  padding: 2rem;
+  font-size: 1.5rem;
 }
 
 .hero {
