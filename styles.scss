@@ -327,7 +327,7 @@ nav {
     align-items: center;
     text-align: center;
     padding: 1rem;
-    background: rgba(255, 255, 255, 0.5);
+    background: hsla(0, 0%, 100%, 0.5);
     
     p {
       font-size: 1.2rem;
@@ -337,3 +337,43 @@ nav {
 }
 
 // END WINDOW STYLES
+
+
+
+// Testimonials
+
+.testimonials {
+  position: relative;
+}
+
+.testimonial__container {
+  display: inline-block;
+
+  overflow: hidden;
+  width: 100%;
+  overflow: hidden;
+}
+
+.testimonial {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin: 1rem auto;
+  background-color: hsla(315, 10%, 8%, 0.445);
+
+  
+    
+  h3 {
+    font-size: $fs-300;
+    padding: 1rem;
+  }
+
+  p {
+    font-size: $fs-200;
+
+  }
+}
+
+// END TESTIMONIALS
